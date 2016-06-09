@@ -1,0 +1,130 @@
+<soapenv:Envelope xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+                  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <m:ClientData xmlns:m="http://www.raiffeisen.ru/services/Client/schemas"
+                      xmlns:m1="http://www.raiffeisen.ru/types/ClientData/v1"
+                      xmlns:m2="http://www.raiffeisen.ru/types/BaseClient/v1"
+                      xmlns:m3="http://www.raiffeisen.ru/types/ClientIdentification/v1"
+                      xmlns:m4="http://www.raiffeisen.ru/types/ExternalId/v1"
+                      xmlns:m6="http://www.raiffeisen.ru/types/Contact/v1"
+                      xmlns:m7="http://www.raiffeisen.ru/types/Address/v1"
+                      xmlns:m8="http://www.raiffeisen.ru/types/FreeAddress/v1"
+                      xmlns:m9="http://www.raiffeisen.ru/types/Phone/v1"
+                      xmlns:m10="http://www.raiffeisen.ru/types/Email/v1"
+                      xmlns:m11="http://www.raiffeisen.ru/types/SecretWord/v1"
+                      xmlns:m12="http://www.raiffeisen.ru/types/PersonName/v1"
+                      xmlns:m13="http://www.raiffeisen.ru/types/IdDocument/v1"
+                      xmlns:m14="http://www.raiffeisen.ru/types/Employer/v1"
+                      xmlns:m000="http://www.raiffeisen.ru/types/RegisteredPerson/v1"
+                      xmlns:m001="http://www.raiffeisen.ru/types/IndividualClient/v1"
+                      xmlns:corpd="http://www.raiffeisen.ru/types/CorporateData/v1"
+                      xmlns:nc="http://www.raiffeisen.ru/types/Nace/v1"
+                      xmlns:lstr="http://www.raiffeisen.ru/types/LegalStructure/v1"
+                      xmlns:entc="http://www.raiffeisen.ru/types/EntrepreneurClient/v1">
+            <m1:individualClient>
+                <m1:masterData>
+                    <m2:clientIdentification>
+                        <m3:id>
+                            <m4:systemId>Midas</m4:systemId>
+                            <m4:systemName>Midas</m4:systemName>
+                            <m4:objectId>AAHSPU</m4:objectId>
+                            <m4:objectType>NATURAL_ENTITY</m4:objectType>
+                        </m3:id>
+                    </m2:clientIdentification>
+                    <m2:category>NATURAL_ENTITY</m2:category>
+                    <m2:subcategory>50</m2:subcategory>
+                    <m2:isResident>true</m2:isResident>
+                    <m2:Contact>
+                        <m6:kind>email</m6:kind>
+                        <m6:Email>
+                            <m10:email>katrin.19@mail.ru</m10:email>
+                        </m6:Email>
+                    </m2:Contact>
+                    <m2:Contact>
+                        <m6:kind>phone</m6:kind>
+                        <m6:Phone>
+                            <m9:type>phone</m9:type>
+                            <m9:countryCode>+7</m9:countryCode>
+                            <m9:phoneNumber>74993564479</m9:phoneNumber>
+                        </m6:Phone>
+                    </m2:Contact>
+                    <m2:Contact>
+                        <m6:kind>address</m6:kind>
+                        <m6:Address>
+                            <m7:type>postal</m7:type>
+                            <m7:freeAddress>
+                                <m8:postCode>109369</m8:postCode>
+                                <m8:region>Москва г</m8:region>
+                                <m8:street>Маршала Голованова ул</m8:street>
+                                <m8:house>1</m8:house>
+                                <m8:apartment>577</m8:apartment>
+                            </m7:freeAddress>
+                            <m7:stringAddress>109369, Москва г, Маршала Голованова ул, д. 1, кв. 577</m7:stringAddress>
+                        </m6:Address>
+                    </m2:Contact>
+                    <m2:Contact>
+                        <m6:kind>address</m6:kind>
+                        <m6:Address>
+                            <m7:type>permanent</m7:type>
+                            <m7:freeAddress>
+                                <m8:postCode>109369</m8:postCode>
+                                <m8:region>Москва г</m8:region>
+                                <m8:street>Маршала Голованова ул</m8:street>
+                                <m8:house>1</m8:house>
+                                <m8:apartment>577</m8:apartment>
+                            </m7:freeAddress>
+                            <m7:stringAddress>109369, Москва г, Маршала Голованова ул, д. 1, кв. 577</m7:stringAddress>
+                        </m6:Address>
+                    </m2:Contact>
+                    <m2:Contact>
+                        <m6:kind>address</m6:kind>
+                        <m6:Address>
+                            <m7:type>registration</m7:type>
+                            <m7:freeAddress>
+                                <m8:postCode>109369</m8:postCode>
+                                <m8:region>Москва г</m8:region>
+                                <m8:street>Маршала Голованова ул</m8:street>
+                                <m8:house>1</m8:house>
+                                <m8:apartment>577</m8:apartment>
+                            </m7:freeAddress>
+                            <m7:stringAddress>109369, Москва г, Маршала Голованова ул, д. 1, кв. 577</m7:stringAddress>
+                        </m6:Address>
+                    </m2:Contact>
+                    <m2:riskType>1</m2:riskType>
+                    <m2:secretWords>
+                        <m11:word>ФЕДОРА</m11:word>
+                    </m2:secretWords>
+                    <m000:rusName>
+                        <m12:firstName>Екатерина</m12:firstName>
+                        <m12:lastName>ОРЛОВСКАЯ</m12:lastName>
+                        <m12:middleName>Ивановна</m12:middleName>
+                    </m000:rusName>
+                    <m000:latName/>
+                    <m000:birthday>1970-11-19</m000:birthday>
+                    <m000:birthPlace>гор. Москва</m000:birthPlace>
+                    <m000:gender>2</m000:gender>
+                    <m000:citizenship>643</m000:citizenship>
+                    <m000:idDocument>
+                        <m13:type>1</m13:type>
+                        <m13:series>45 05</m13:series>
+                        <m13:number>430144</m13:number>
+                        <m13:issueDate>2003-02-26</m13:issueDate>
+                        <m13:issuePlace>ОВД &quot;Марьино&quot; гор. Москвы</m13:issuePlace>
+                    </m000:idDocument>
+                    <m001:educationLevel>3</m001:educationLevel>
+                    <m001:maritalStatus>2</m001:maritalStatus>
+                    <m001:childrenCount>1</m001:childrenCount>
+                    <m001:isPayroll>true</m001:isPayroll>
+                    <m001:employer>
+                        <m14:companyName>ООО КОНТАКТ РЕАЛ ЭКСТЕЙТ</m14:companyName>
+                        <m14:activitySphere>Строительство, недвижимость</m14:activitySphere>
+                    </m001:employer>
+                    <m001:isPropertyOwner>false</m001:isPropertyOwner>
+                    <m001:isCarOwner>false</m001:isCarOwner>
+                    <m001:hasCrimeHistory>false</m001:hasCrimeHistory>
+                </m1:masterData>
+            </m1:individualClient>
+        </m:ClientData>
+    </soapenv:Body>
+</soapenv:Envelope>
